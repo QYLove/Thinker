@@ -3,6 +3,7 @@
     package="com.sun.thinker">
 
     <application
+        android:name=".demo.ThinkerApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,7 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Thinker">
         <activity
-            android:name=".MainActivity"
+            android:name=".demo.asyncInflate.AsyncActivity"
+            android:exported="false" />
+        <activity
+            android:name=".demo.flow.FlowLayoutDemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".demo.anchor.AnchorTaskTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".demo.viewStub.ViewStubDemoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_view_stub_demo"
+            android:theme="@style/Theme.Thinker.Fullscreen" />
+        <activity
+            android:name=".demo.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

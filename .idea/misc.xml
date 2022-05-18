@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/androidTool/androidProject/GithubProject/Thinker/app/src/main/res/layout/activity_anchor_task_test.xml" value="0.25" />
+        <entry key="..\:/androidTool/androidProject/GithubProject/Thinker/app/src/main/res/layout/activity_async.xml" value="0.33645833333333336" />
+        <entry key="..\:/androidTool/androidProject/GithubProject/Thinker/app/src/main/res/layout/activity_flow_layout_demo.xml" value="0.33645833333333336" />
         <entry key="..\:/androidTool/androidProject/GithubProject/Thinker/app/src/main/res/layout/activity_main.xml" value="0.321875" />
+        <entry key="..\:/androidTool/androidProject/GithubProject/Thinker/app/src/main/res/layout/activity_view_stub_demo.xml" value="0.31431159420289856" />
+        <entry key="..\:/androidTool/androidProject/GithubProject/Thinker/app/src/main/res/layout/fragment_asny.xml" value="0.1" />
+        <entry key="..\:/androidTool/androidProject/GithubProject/Thinker/app/src/main/res/layout/layout_bottom.xml" value="0.32563405797101447" />
       </map>
     </option>
   </component>

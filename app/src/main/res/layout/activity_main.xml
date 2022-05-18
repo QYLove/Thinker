@@ -4,16 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".demo.MainActivity">
 
-    <TextView
-        android:id="@+id/activity_main_tv"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/activity_main_stub_btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="跳转 ViewStub"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/activity_main_anchor_task_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转 AnchorTask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_stub_btn" />
+
+    <Button
+        android:id="@+id/activity_main_async_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试异步加载"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_anchor_task_btn" />
+
+    <Button
+        android:id="@+id/activity_main_flow_layout_demo_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转 Flow Layout Demo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_async_btn" />
+
+    <LinearLayout
+        android:id="@+id/activity_main_switch_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_flow_layout_demo_btn">
+
+        <TextView
+            android:id="@+id/activity_main_async_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="首页 Fragment 开启预加载" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/activity_main_async_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/activity_main_async_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.sun.thinker.demo.asyncInflate.page.AsyncFragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_switch_ll" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
